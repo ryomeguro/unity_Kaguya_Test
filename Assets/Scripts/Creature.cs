@@ -7,6 +7,12 @@ public class Creature : MonoBehaviour {
 	int hp;
 	[SerializeField]
 	int gold;
+	[SerializeField]
+	int defencePoint;
+	[SerializeField]
+	int direction;
+	[SerializeField]
+	Vector2 position;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +24,11 @@ public class Creature : MonoBehaviour {
 	
 	}
 
-	void damaged(){
+	void damage(int point){
+
+	}
+
+	void move (int direction) {
 
 	}
 }

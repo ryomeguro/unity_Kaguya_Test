@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class Monster : Creature {
+    private int exPoint; 
+	private int goldPoint;
 
 	// Use this for initialization
 	void Start () {
@@ -10,6 +12,14 @@ public class Monster : Creature {
 	
 	// Update is called once per frame
 	void Update () {
+	
+	}
+
+	void attack() {
+	
+	}
+
+	void aiAction () {
 	
 	}
 }
