@@ -17,4 +17,8 @@ public class Creature : MonoBehaviour {
 	void Update () {
 	
 	}
+
+	void damaged(){
+
+	}
 }
