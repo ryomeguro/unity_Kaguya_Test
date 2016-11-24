@@ -1,11 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Monster : MonoBehaviour {
+public class Monster : Creature {
 
 	// Use this for initialization
 	void Start () {
-	
+	    Debug.Log("PPAP");
 	}
 	
 	// Update is called once per frame
