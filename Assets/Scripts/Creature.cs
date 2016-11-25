@@ -14,9 +14,19 @@ public abstract class Creature : MonoBehaviour {
 	[SerializeField]
 	Vector2 position;
 	[SerializeField]
+<<<<<<< HEAD
 	Direction direction;
 
 	int hp;
+=======
+	int gold;
+	[SerializeField]
+	int defencePoint;
+	[SerializeField]
+	int direction;
+	[SerializeField]
+	Vector2 position;
+>>>>>>> origin/CreatureBranch
 
 
 	void Start(){
@@ -30,7 +40,15 @@ public abstract class Creature : MonoBehaviour {
 		}
 	}
 
+<<<<<<< HEAD
 	void move(Direction dir){
+=======
+	void damage(int point){
+
+	}
+
+	void move (int direction) {
+>>>>>>> origin/CreatureBranch
 
 	}
 
