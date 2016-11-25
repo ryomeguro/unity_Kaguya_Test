@@ -3,13 +3,14 @@ using System.Collections;
 
 public class Floor : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
+	static int x,y;
+
+	public static void setXY(int sx,int sy){
+		x = sx;
+		y = sy;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public Floor(int stage){
+
 	}
 }
