@@ -12,6 +12,7 @@ public class Hero : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
+	//huuuuuuuuuuu
 	void Update () {
 	
 	}
