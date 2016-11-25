@@ -32,13 +32,10 @@ public abstract class Creature : MonoBehaviour {
 		}
 	}
 		
-	void damage(int point){
-
-	}
 
 	void move (int direction) {
 
 	}
 
-	abstract void death ();
+	protected abstract void death ();
 }

@@ -22,4 +22,8 @@ public class Monster : Creature {
 	void aiAction () {
 	
 	}
+
+	void death(){
+
+	}
 }
