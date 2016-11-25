@@ -1,24 +1,38 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Creature : MonoBehaviour {
+public abstract class Creature : MonoBehaviour {
+
+	enum Direction{UP,DOWN,LEFT,RIGHT};
 
 	[SerializeField]
+	int maxHp;
+	[SerializeField]
+	int attackPoint;
+	[SerializeField]
+	int defencePoint;
+	[SerializeField]
+	Vector2 position;
+	[SerializeField]
+	Direction direction;
+
 	int hp;
-	[SerializeField]
-	int gold;
 
-	// Use this for initialization
-	void Start () {
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+	void Start(){
+		hp = maxHp;
 	}
 
-	void damaged(){
+	public void damage (int point){
+		hp -= point;
+		if (hp <= 0) {
+			death ();
+		}
+	}
+
+	void move(Direction dir){
 
 	}
+
+	abstract void death ();
 }

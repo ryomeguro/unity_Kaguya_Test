@@ -240,6 +240,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 1906406098}
   - 212: {fileID: 1906406097}
+  - 114: {fileID: 1906406099}
   m_Layer: 0
   m_Name: Block2 (1)
   m_TagString: Untagged
@@ -290,3 +291,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1906406099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1906406096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d3d1e270e7b846c8b61042b0e433ee3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHp: 0
+  gold: 0
+  attackPoint: 0
+  hp: 0
