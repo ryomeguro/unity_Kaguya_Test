@@ -23,7 +23,7 @@ public class Monster : Creature {
 	
 	}
 
-	void death(){
+	protected override void death(){
 
 	}
 }

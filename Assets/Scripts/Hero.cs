@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Hero : MonoBehaviour {
+public class Hero : Creature {
 	private int level;
 	private int ex;
 	private int gold;
@@ -12,16 +12,20 @@ public class Hero : MonoBehaviour {
 	}
 	
 	// Update is called once per frame
-	//huuuuuuuuuuu
 	void Update () {
 	
 	}
 
-	void dig (int direction) {
+	void dig (Direction direction) {
 
 	}
 
 	void useItem (int item) {
 
+	}
+
+	protected override void death ()
+	{
+		//throw new System.NotImplementedException ();
 	}
 }

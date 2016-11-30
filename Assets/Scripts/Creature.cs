@@ -3,7 +3,7 @@ using System.Collections;
 
 public abstract class Creature : MonoBehaviour {
 
-	enum Direction{UP,DOWN,LEFT,RIGHT};
+	public enum Direction{UP,DOWN,LEFT,RIGHT};
 
 	[SerializeField]
 	int maxHp;
@@ -20,8 +20,7 @@ public abstract class Creature : MonoBehaviour {
 	int hp;
 
 
-
-	void Start(){
+	protected void Start(){
 		hp = maxHp;
 	}
 
@@ -33,7 +32,7 @@ public abstract class Creature : MonoBehaviour {
 	}
 		
 
-	void move (int direction) {
+	protected void move (Direction direction) {
 
 	}
 
