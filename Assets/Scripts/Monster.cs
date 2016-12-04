@@ -23,6 +23,10 @@ public class Monster : Creature {
 	
 	}
 
+	public void move(){
+
+	}
+
 	protected override void death(){
 
 	}

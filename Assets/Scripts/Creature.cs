@@ -5,20 +5,27 @@ public abstract class Creature : MonoBehaviour {
 
 	public enum Direction{UP,DOWN,LEFT,RIGHT};
 
+
 	[SerializeField]
 	int maxHp;
 	[SerializeField]
-	int attackPoint;
+	protected int attackPoint;
 	[SerializeField]
-	int defencePoint;
-	[SerializeField]
-	Vector2 position;
-	[SerializeField]
+	protected int defencePoint;
+
+	public Vector2 position;
 
 	Direction direction;
 
 	int hp;
 
+	public int AttackPoint{
+		get{return attackPoint;}
+	}
+
+	public int DefencePoint{
+		get{return defencePoint;}
+	}
 
 	protected void Start(){
 		hp = maxHp;
@@ -31,10 +38,5 @@ public abstract class Creature : MonoBehaviour {
 		}
 	}
 		
-
-	protected void move (Direction direction) {
-
-	}
-
 	protected abstract void death ();
 }

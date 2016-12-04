@@ -15,8 +15,40 @@ public class Hero : Creature {
 	void Update () {
 	
 	}
+		
+	public bool move(Direction direction){
+		Vector2 dir = Vector2.zero;
 
-	void dig (Direction direction) {
+		switch (direction) {
+		case(Direction.UP):
+			//Debug.Log ("aaa");
+			dir = new Vector2 (0, 1);
+			break;
+		case(Direction.DOWN):
+			dir = new Vector2(0,-1);
+			break;
+		case(Direction.LEFT):
+			dir = new Vector2(-1,0);
+			break;
+		case(Direction.RIGHT):
+			dir = new Vector2(1,0);
+			break;
+		default:
+			break;
+		}
+		if (true) {//whether can dig?
+			dig (position + dir);
+		} else if (false) {//whether can attack?
+
+			return true;
+		} else if (false) {//whether can't move?
+			return false;
+		}
+		transform.position = transform.position + (Vector3)dir * GameManager.unit;
+		return true;
+	}
+
+	void dig (Vector2 blockPosition) {
 
 	}
 

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Floor : MonoBehaviour {
+public class Floor {//: MonoBehaviour {
 
 	int [,]blocks;
 	int stage;
